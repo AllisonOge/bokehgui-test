@@ -2,7 +2,7 @@
 A `hello world` file to test `gr-bokehgui` OOT module with docker containers
 
 ## Quick start
-Clone the repository to your local machine and run the flowgraph with a gnuradio version that supports [gr-bokehgui](https://github.com/gnuradio/gr-bokehgui) (see their documentation for installation instructions)
+Clone this repository to your local machine and run the flowgraph with a gnuradio version that supports [gr-bokehgui](https://github.com/gnuradio/gr-bokehgui) (see their documentation for installation instructions)
 
 The flowgraph should look like this:
 
