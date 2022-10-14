@@ -54,7 +54,7 @@ class test_bokehgui(gr.top_block):
         self.bokehgui_waterfall_sink_x_0_plot.set_x_label('Frequency' + '(' +'Hz'+')')
         self.bokehgui_waterfall_sink_x_0_plot.enable_grid(False)
         self.bokehgui_waterfall_sink_x_0_plot.enable_legend(True)
-        self.bokehgui_waterfall_sink_x_0_plot.set_layout(*((0,1)))
+        self.bokehgui_waterfall_sink_x_0_plot.set_layout(*((0,0,2,2)))
         self.bokehgui_time_sink_x_0 = bokehgui.time_sink_c_proc(1024, samp_rate, "",
          1
         )
@@ -72,7 +72,7 @@ class test_bokehgui(gr.top_block):
           else:
             legend_list.append(labels[i])
 
-        self.bokehgui_time_sink_x_0_plot = bokehgui.time_sink_c(self.plot_lst, self.bokehgui_time_sink_x_0, log_x = False, log_y = False, update_time = 100, legend_list = legend_list, is_message =   False)
+        self.bokehgui_time_sink_x_0_plot = bokehgui.time_sink_c(self.plot_lst, self.bokehgui_time_sink_x_0, log_x = False, log_y = True, update_time = 100, legend_list = legend_list, is_message =   False)
 
         self.bokehgui_time_sink_x_0_plot.set_y_axis([-1, 1])
         self.bokehgui_time_sink_x_0_plot.set_y_label('Amplitude' + '(' +""+')')
@@ -83,7 +83,7 @@ class test_bokehgui(gr.top_block):
         self.bokehgui_time_sink_x_0_plot.enable_grid(False)
         self.bokehgui_time_sink_x_0_plot.enable_axis_labels(True)
         self.bokehgui_time_sink_x_0_plot.enable_legend(True)
-        self.bokehgui_time_sink_x_0_plot.set_layout(*((1,1)))
+        self.bokehgui_time_sink_x_0_plot.set_layout(*((0, 2, 2,1)))
 
         colors = ["blue", "red", "green", "black", "cyan",
                   "magenta", "yellow", "blue", "blue", "blue"]
